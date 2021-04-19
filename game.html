@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .car {
+            height: 135px;
+            width: 70px;
+            position: absolute;
+            /* background-color: rgb(64, 255, 80); */
+            bottom: 120px;
+            left: 40%;
+        }
+        
+        .enemy {
+            height: 135px;
+            width: 70px;
+            position: absolute;
+            /* background-color: rgb(64, 255, 80); */
+            bottom: 120px;
+        }
+        
+        .score {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            background-color: rgb(182, 182, 245);
+            min-width: 100px;
+            padding: 10px;
+            text-align: center;
+            color: rgb(17, 23, 56);
+            font-family: fantasy;
+            box-shadow: 2px 2px 10px rgb(226, 226, 226);
+            z-index: 1;
+        }
+        
+        .lines {
+            width: 10px;
+            height: 120px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            margin-left: 195px;
+        }
+        
+        .gameArea {
+            width: 400px;
+            height: 100vh;
+            left: 5%;
+            background-color: rgb(28, 28, 34);
+            margin: auto;
+            position: absolute;
+            overflow: hidden;
+        }
+        
+        .hide {
+            display: none;
+        }
+        
+        .startScreen {
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            width: 400px;
+            background-color: rgb(49, 50, 54);
+            text-align: center;
+            color: cornsilk;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            z-index: 2;
+        }
+        
+        .GameStart {
+            margin: auto;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha512-g06pohSHYbSOHKq8tdDGXckE6C23Yt30xlTFDhrO0OcO/bNO2MWXb63oqU/Y23GDMNOon100eGHxZPBnT4QgMw==" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="carGame">
+
+        <div class="score hide"></div>
+        <div class="startScreen">
+            <h1 class="GameOver hide">Game Over </h1>
+            <p>
+                <h1 class='GameStart'>Click Here To Start</h1> <br> Use <i class="fa fa-angle-left"></i> <i class="fa fa-angle-up"></i> <i class="fa fa-angle-down"></i> <i class="fa fa-angle-right"></i> To Move and avoid cars
+                <br> #@ Learn Drive From GTA V ;( @#
+            </p>
+        </div>
+        <div class="gameArea"></div>
+    </div>
+
+
+
+    <script src="./control.js"></script>
+</body>
+
+</html>
